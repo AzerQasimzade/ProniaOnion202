@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cj04ZKVLCholjtw00FcUK8kn2D694e+Ea5QuyRlhHks+1+pK+uuBPdc5+jt+E/FTOhHC5/zYr8FPItVPpvg1bg==",
+  "dgSpecHash": "fc1XXcCfLRw2X1uZ2ZPjVjalhkK7pSXPzUilFkbXV9SsuvufPEKAJfN6O2bog6DQyxWcM44ptJDIMpyNo4Fl0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\ProniaOnion202\\src\\Core\\PrinaOnion202.Domain\\PrinaOnion202.Domain.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\ProniaOnion202\\ProniaOnion202Main\\src\\Core\\PrinaOnion202.Domain\\PrinaOnion202.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

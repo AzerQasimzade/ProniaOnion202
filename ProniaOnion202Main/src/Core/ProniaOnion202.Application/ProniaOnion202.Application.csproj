@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PrinaOnion202.Domain\PrinaOnion202.Domain.csproj" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
+    <ProjectReference Include="..\PrinaOnion202.Domain\PrinaOnion202.Domain.csproj" />
   </ItemGroup>
 
 </Project>

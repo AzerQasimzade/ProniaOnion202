@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\bin\Debug\net6.0\PrinaOnion202.Domain.deps.json
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\bin\Debug\net6.0\PrinaOnion202.Domain.dll
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\bin\Debug\net6.0\PrinaOnion202.Domain.pdb
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\PrinaOnion202.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\PrinaOnion202.Domain.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\PrinaOnion202.Domain.AssemblyInfo.cs
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\PrinaOnion202.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\PrinaOnion202.Domain.dll
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\refint\PrinaOnion202.Domain.dll
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\PrinaOnion202.Domain.pdb
+C:\Users\User\Desktop\ProniaOnion202\ProniaOnion202Main\src\Core\PrinaOnion202.Domain\obj\Debug\net6.0\ref\PrinaOnion202.Domain.dll

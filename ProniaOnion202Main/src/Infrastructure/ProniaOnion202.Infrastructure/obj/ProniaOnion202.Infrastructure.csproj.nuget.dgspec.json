@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {}
+    "C:\\Users\\User\\Desktop\\ProniaOnion202\\ProniaOnion202Main\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {
+    "C:\\Users\\User\\Desktop\\ProniaOnion202\\ProniaOnion202Main\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\ProniaOnion202\\ProniaOnion202Main\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
         "projectName": "ProniaOnion202.Infrastructure",
-        "projectPath": "C:\\Users\\User\\Desktop\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\ProniaOnion202\\ProniaOnion202Main\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\ProniaOnion202\\ProniaOnion202Main\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
