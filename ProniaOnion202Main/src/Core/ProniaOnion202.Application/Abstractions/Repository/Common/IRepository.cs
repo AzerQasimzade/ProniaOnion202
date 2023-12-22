@@ -18,11 +18,15 @@ namespace ProniaOnion202.Application.Abstractions.Repository
            int skip = 0,
            int take = 0,
            bool isTracking = false,
+           bool ignoreQuery=false,
            params string[] includes);
         Task<T> GetByIdAsync(int id);
         Task AddAsync(T category);
         void Update(T category);
         void Delete(T category);
+
+        void SoftDelete(T entity);
+
         Task SaveChangesAsync();
     }
 }

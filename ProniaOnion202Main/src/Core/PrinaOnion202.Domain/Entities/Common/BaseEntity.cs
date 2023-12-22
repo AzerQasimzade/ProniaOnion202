@@ -17,7 +17,6 @@ namespace PrinaOnion202.Domain.Entities
         public  BaseEntity()
         {
             CreatedBy = "azer.qasymov";
-            CreatedAt = DateTime.Now;
         }
     }
 }

@@ -34,5 +34,14 @@ namespace ProniaOnion202.API.Controllers
             await _service.Update(id,categoryUpdateDto);
             return StatusCode(StatusCodes.Status204NoContent);
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id <= 0) return StatusCode(StatusCodes.Status400BadRequest);
+            await _service.SoftDeleteAsync(id);
+            return StatusCode(StatusCodes.Status204NoContent);
+            
+        }
     }
 }

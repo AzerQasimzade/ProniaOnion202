@@ -16,7 +16,6 @@ namespace ProniaOnion202.Persistence.Implementations.Services
     {
         private readonly ICategoryRepository _repository;
         private readonly IMapper _mapper;
-
         public CategoryService(ICategoryRepository repository,IMapper mapper)
         {
             _repository = repository;
@@ -28,6 +27,7 @@ namespace ProniaOnion202.Persistence.Implementations.Services
             ICollection<CategoryItemDto> dtos = _mapper.Map<ICollection<CategoryItemDto>>(categories); 
             return dtos;
         } 
+
         public async Task Create(CategoryCreateDto dto)
         {
             //await _repository.AddAsync(new Category
@@ -47,6 +47,14 @@ namespace ProniaOnion202.Persistence.Implementations.Services
             _repository.Update(category);
             await _repository.SaveChangesAsync();
 
+        }
+
+        public async Task SoftDeleteAsync(int id)
+        {
+            Category category=await _repository.GetByIdAsync(id);
+            if (category is null) throw new Exception("Not Found :)");
+            _repository.SoftDelete(category);
+            await _repository.SaveChangesAsync();
         }
 
         //public async Task Delete(int id)

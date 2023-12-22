@@ -1,6 +1,7 @@
 using ProniaOnion202.Persistence.ServiceRegistration;
 using ProniaOnion202.Application.ServiceRegistration;
-
+using FluentValidation.AspNetCore;
+using ProniaOnion202.Application.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
