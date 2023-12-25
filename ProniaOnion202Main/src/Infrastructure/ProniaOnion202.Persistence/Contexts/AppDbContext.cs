@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PrinaOnion202.Domain.Entities;
+using ProniaOnion202.Persistence.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,12 +23,9 @@ namespace ProniaOnion202.Persistence.Contexts
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Category>().HasQueryFilter(c => c.IsDeleted == false);
-            modelBuilder.Entity<Tag>().HasQueryFilter(c => c.IsDeleted == false);
-
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            
+        {     
+            modelBuilder.ApplyQueryFilters();
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());           
             base.OnModelCreating(modelBuilder);
         }
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
