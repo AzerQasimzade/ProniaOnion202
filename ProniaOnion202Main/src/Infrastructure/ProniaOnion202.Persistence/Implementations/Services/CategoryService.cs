@@ -48,7 +48,6 @@ namespace ProniaOnion202.Persistence.Implementations.Services
             await _repository.SaveChangesAsync();
 
         }
-
         public async Task SoftDeleteAsync(int id)
         {
             Category category=await _repository.GetByIdAsync(id,true);
@@ -57,13 +56,21 @@ namespace ProniaOnion202.Persistence.Implementations.Services
             await _repository.SaveChangesAsync();
         }
 
-        //public async Task Delete(int id)
-        //{
-        //    Category category = await _repository.GetByIdAsync(id);
-        //    if (category == null) throw new Exception("Category cant found");
-        //    _repository.Delete(category);
-        //    await _repository.SaveChangesAsync();
-        //}
+        public async Task DeleteAsync(int id)
+        {
+            Category category = await _repository.GetByIdAsync(id);
+            if (category == null) throw new Exception("Category cant found");
+            _repository.Delete(category);
+            await _repository.SaveChangesAsync();
+        }
+
+        public async Task ReverseDeleteAsync(int id)
+        {
+            Category category = await _repository.GetByIdAsync(id);
+            if (category == null) throw new Exception("Category cant found");
+            _repository.ReverseDelete(category);
+            await _repository.SaveChangesAsync();
+        }
 
 
 

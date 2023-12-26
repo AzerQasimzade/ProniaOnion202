@@ -24,6 +24,9 @@ namespace ProniaOnion202.Application.Validators
 
             RuleFor(x => x.Price).Must(CheckPrice);
 
+            RuleFor(x => x.CategoryId).Must(c => c > 0).WithMessage("Id cannot be less than 0");
+
+            RuleForEach(x=>x.ColorIds).Must(i=>i>0).WithMessage("Id cannot be less than 0");
         }
         public bool CheckPrice(decimal price)
         {

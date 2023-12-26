@@ -33,6 +33,8 @@ namespace ProniaOnion202.Application.Abstractions.Repository
            bool isTracking = false,
            bool ignoreQuery = false,
            params string[] includes);
+
+        Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);
         Task AddAsync(T entity);
         void Update(T entity);
         void Delete(T entity);

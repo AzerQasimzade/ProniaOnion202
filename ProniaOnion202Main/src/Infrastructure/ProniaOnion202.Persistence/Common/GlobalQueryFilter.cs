@@ -20,7 +20,6 @@ namespace ProniaOnion202.Persistence.Common
             builder.ApplyFilter<Category>();
             builder.ApplyFilter<Color>();
             builder.ApplyFilter<ProductColor>();
-
         }
     }
 }

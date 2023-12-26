@@ -1,5 +1,4 @@
-﻿using ProniaOnion202.Application.Dtos.Categories;
-using ProniaOnion202.Application.Dtos.Tags;
+﻿using ProniaOnion202.Application.Dtos.Tags;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +14,8 @@ namespace ProniaOnion202.Application.Abstractions.Services
         Task Create(TagCreateDto dto);
         Task Update(int id, TagUpdateDto tagUpdateDto);
         Task SoftDeleteAsync(int id);
+        Task DeleteAsync(int id);
+        Task ReverseDeleteAsync(int id);
 
 
     }

@@ -55,7 +55,6 @@ namespace ProniaOnion202.Persistence.Contexts
                     case EntityState.Added:
                         tagdata.Entity.CreatedAt = DateTime.Now;
                         break;
-
                 }
 
             }

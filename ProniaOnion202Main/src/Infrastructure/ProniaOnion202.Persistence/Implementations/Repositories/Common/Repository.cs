@@ -67,6 +67,10 @@ namespace ProniaOnion202.Persistence.Implementations.Repositories
             return await query.FirstOrDefaultAsync();
         }
        
+        public async Task<bool> IsExistAsync(Expression<Func<T,bool>> expression)
+        {    
+           return await _table.AnyAsync(expression);
+        }
         public async Task AddAsync(T entity)
         {
             await _table.AddAsync(entity);
