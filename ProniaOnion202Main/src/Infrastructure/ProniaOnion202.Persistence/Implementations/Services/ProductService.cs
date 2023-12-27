@@ -61,7 +61,7 @@ namespace ProniaOnion202.Persistence.Implementations.Services
         }
         public async Task UpdateAsync(int id,ProductUpdateDto dto)
         {
-            Product existed=await _repository.GetByIdAsync(id,true,includes:nameof(Product.ProductColors));
+            Product existed=await _repository.GetByIdAsync(id,true,includes:new string[] {nameof(Product.ProductColors),nameof(Product.ProductTags)});
             if (existed.Name!=dto.Name)
                 if (await _repository.IsExistAsync(p => p.Name == dto.Name)) throw new Exception($"there is a product with the same {dto.Name}");
             
@@ -82,10 +82,18 @@ namespace ProniaOnion202.Persistence.Implementations.Services
                     }
                 }
                 existed.ProductColors = existed.ProductColors.Where(pc => dto.ColorIds.Any(colId => pc.ColorId == colId)).ToList();
-
             }
             else
                 existed.ProductColors=new List<ProductColor>();
+            foreach (var tagId in dto.TagIds)
+            {
+                if (!existed.ProductColors.Any(pc => pc.TagId == tagId))
+                {
+                    if (!await _colorRepository.IsExistAsync(c => c.Id == tagId)) throw new Exception($"Could not find {tagId}");
+                    existed.ProductColors.Add(new ProductColor { TagId = tagId });
+                }
+            }
+            existed.ProductTags = existed.ProductTags.Where(pc => dto.TagIds.Any(tagId => pc.TagId == tagId)).ToList();
             _repository.Update(existed);
             await _repository.SaveChangesAsync();
         }
