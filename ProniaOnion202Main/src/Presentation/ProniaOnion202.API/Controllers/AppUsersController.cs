@@ -5,7 +5,7 @@ using ProniaOnion202.Application.Dtos.Users;
 
 namespace ProniaOnion202.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class AppUsersController : ControllerBase
     {
@@ -20,6 +20,11 @@ namespace ProniaOnion202.API.Controllers
         {
             await _service.Register(dto);
             return StatusCode(StatusCodes.Status204NoContent);
+        }
+        [HttpPost("[Action]")]
+        public async Task<IActionResult> Login([FromForm] LoginDto dto)
+        {       
+            return StatusCode(StatusCodes.Status200OK,await _service.Login(dto));
         }
     }
 }
